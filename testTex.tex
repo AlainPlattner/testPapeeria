@@ -1,0 +1,38 @@
+\documentclass[authoryear,5p,times]{elsarticle}
+
+\usepackage{siunitx}
+
+
+\begin{document}
+
+\begin{frontmatter}
+  \title{Some test}
+
+  \author[Alain]{Alain Plattner}
+  \address[Alain]{Somewhere far away}
+
+  \begin{abstract}
+    Blavblablablablaba
+  \end{abstract}
+
+  \begin{keyword}
+    Bla \sep bla \sep bla
+  \end{keyword}
+\end{frontmatter}
+
+  
+\section{Introdcution}
+
+Here I'm testing stuff \SI{200000}{\kilo \meter}, see Fig.~\ref{bla}. Also see \cite{Peterson2525}.
+
+\begin{figure*}[h]
+  \includegraphics[width=\textwidth]{Figures/profileGUI.png}
+  \caption{\label{bla} testing}
+\end{figure*}
+
+
+\section*{References}
+\bibliographystyle{model5-names}
+\bibliography{testbib.bib}
+
+\end{document}
